@@ -1,0 +1,6 @@
+>>What happens when you initialize a repository? Why do you need to do it?
+The .git folder is created to track changes.
+
+add files to staging area
+
+git add

@@ -1,0 +1,46 @@
+>>How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+diff -u old new
+
+The diff showed the lines where there was a difference so it was easier to spot the error.  Thus it is good to have shorter lines in the files.
+
+>>How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+It will be easier to backtrack if something goes wrong. And with automated version control you don't have to worry about naming the files yourself
+
+>>What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Git depends on the user to make regular commits. If the user fails to do that there will be no backup.
+Google docs saves file versions on its own, so there is always a backup, although it may not be at a logical point.
+
+>>Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Because Git was designed for code where many files can be interrelated.  Google Docs usually store files that have nothing to do with each other.
+
+git clone url
+
+git config --global color.ui auto
+
+git log
+
+git dif first_id second_id
+
+
+>>How can you use the commands git log and git diff to view the history of files?
+git log shows you all the commits.  You can find commit ID there for a specific change.  with git diff you can compare what changed between two commits.
+
+>>How might using version control make you more confident to make changes that could break something?
+
+With version control it is easy to revert to an older version in case something breaks.
+
+>>Now that you have your workspace set up, what do you want to try using Git for?
+I would like to use to make changes to my 1st project to use bootstrap framework.
+And to work on my technovation site.
+------------
+git init -- creates a repository
+git status
+
+
+
+
+
