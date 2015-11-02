@@ -4,3 +4,20 @@ The .git folder is created to track changes.
 add files to staging area
 
 git add
+
+>>How is the staging area different from the working directory and the repository? What value do you think it offers?
+Staging area hold the files that you want to commit at the next commit.
+It allows you to choose which files you want to commit together.
+
+http://udacity.github.io/git-styleguide/
+
+types:
+feat: a new feature
+fix: a bug fix
+docs: changes to documentation
+style: formatting, missing semi colons, etc; no code change
+refactor: refactoring production code
+test: adding tests, refactoring test; no production code change
+chore: updating build tasks, package manager configs, etc; no production code change
+
+git commit
