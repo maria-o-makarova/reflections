@@ -40,7 +40,7 @@ And to work on my technovation site.
 git init -- creates a repository
 git status
 
-
+su
 
 
 

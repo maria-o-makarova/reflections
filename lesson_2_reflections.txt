@@ -21,3 +21,48 @@ test: adding tests, refactoring test; no production code change
 chore: updating build tasks, package manager configs, etc; no production code change
 
 git commit
+
+to compare current file to staging area: git diff.
+to compare staging area to latest commit in the depository: git diff --staged
+to compare recent commits: git diff commit1 commit2
+to discard changes in staging area or working directory: git reset -- hard
+
+to attach back the head: git checkout master
+
+>>How can you use the staging area to make sure you have one commit per logical change?
+You can put several files into the staging area before you commit all those changes together
+
+**Branches
+->experimental features
+->Italian version
+->Labels called branches -- master, intalian, exp
+    git checkout branch master
+->can merge different branches later
+
+EX easier steroids game:
+git branch  <- shows current branches
+git branch easy-mode <-- creates a branch
+git checkout easy-mode <- to modify that branch.
+
+>>What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches can help to try out experimental features or different versions of the game.
+
+git log --graph --oneline branch1 branch 2.
+
+git checkout -b new_branch_name
+
+>>How do the diagrams help you visualize the branch structure?
+by showing what commits they share in common.
+
+combining coins and master
+
+git show  <-- show changes compared to parent
+
+>>What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Git combines the changes from the one branch to the current branch  git merge [branch]
+we no longer need the old branch name and can delete it with git branch -d [branch-name]
+
+>>What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+It is much faster if git does it when there are no conflicts
+
+
